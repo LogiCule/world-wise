@@ -1,3 +1,4 @@
+export { default as AppLayout } from "./AppLayout";
 export { default as HomePage } from "./Homepage";
 export { default as Login } from "./Login";
 export { default as PageNotFound } from "./PageNotFound";

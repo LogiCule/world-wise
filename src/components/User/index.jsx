@@ -1,4 +1,4 @@
-import styles from "./User.module.css";
+import { user } from "./User.module.css";
 
 const FAKE_USER = {
   name: "Jack",
@@ -8,14 +8,14 @@ const FAKE_USER = {
 };
 
 function User() {
-  const user = FAKE_USER;
+  const user_data = FAKE_USER;
 
   function handleClick() {}
 
   return (
-    <div className={styles.user}>
-      <img src={user.avatar} alt={user.name} />
-      <span>Welcome, {user.name}</span>
+    <div className={user}>
+      <img src={user_data.avatar} alt={user_data.name} />
+      <span>Welcome, {user_data.name}</span>
       <button onClick={handleClick}>Logout</button>
     </div>
   );

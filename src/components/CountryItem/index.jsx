@@ -1,9 +1,9 @@
-import styles from "./CountryItem.module.css";
+import { countryItem } from "./CountryItem.module.css";
 import PropTypes from "prop-types";
 
 function CountryItem({ country }) {
   return (
-    <li className={styles.countryItem}>
+    <li className={countryItem}>
       <span>{country.emoji}</span>
       <span>{country.country}</span>
     </li>

@@ -1,14 +1,14 @@
-import styles from "./Message.module.css";
+import { message } from "./Message.module.css";
 import Proptypes from "prop-types";
 
-function Message({ message }) {
+function Message({ msg }) {
   return (
-    <p className={styles.message}>
-      <span role="img">👋</span> {message}
+    <p className={message}>
+      <span role="img">👋</span> {msg}
     </p>
   );
 }
 
-Message.propTypes = { message: Proptypes.string };
+Message.propTypes = { msg: Proptypes.string };
 
 export default Message;

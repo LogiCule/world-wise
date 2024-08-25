@@ -2,15 +2,7 @@
 
 import { useState } from "react";
 
-import styles from "./Form.module.css";
-
-export function convertToEmoji(countryCode) {
-  const codePoints = countryCode
-    .toUpperCase()
-    .split("")
-    .map((char) => 127397 + char.charCodeAt());
-  return String.fromCodePoint(...codePoints);
-}
+import { form, row, buttons } from "./Form.module.css";
 
 function Form() {
   const [cityName, setCityName] = useState("");
@@ -19,18 +11,18 @@ function Form() {
   const [notes, setNotes] = useState("");
 
   return (
-    <form className={styles.form}>
-      <div className={styles.row}>
+    <form className={form}>
+      <div className={row}>
         <label htmlFor="cityName">City name</label>
         <input
           id="cityName"
           onChange={(e) => setCityName(e.target.value)}
           value={cityName}
         />
-        {/* <span className={styles.flag}>{emoji}</span> */}
+        {/* <span className={flag}>{emoji}</span> */}
       </div>
 
-      <div className={styles.row}>
+      <div className={row}>
         <label htmlFor="date">When did you go to {cityName}?</label>
         <input
           id="date"
@@ -39,7 +31,7 @@ function Form() {
         />
       </div>
 
-      <div className={styles.row}>
+      <div className={row}>
         <label htmlFor="notes">Notes about your trip to {cityName}</label>
         <textarea
           id="notes"
@@ -48,7 +40,7 @@ function Form() {
         />
       </div>
 
-      <div className={styles.buttons}>
+      <div className={buttons}>
         <button>Add</button>
         <button>&larr; Back</button>
       </div>
