@@ -1,9 +1,11 @@
 // Uses the same styles as Product
+import { PageNav } from "../../components";
 import styles from "./Pricing.module.css";
 
 export default function Pricing() {
   return (
     <main className={styles.product}>
+      <PageNav />
       <section>
         <div>
           <h2>
@@ -17,7 +19,7 @@ export default function Pricing() {
             voluptatem iste.
           </p>
         </div>
-        <img src="img-2.jpg" alt="overview of a large city with skyscrapers" />
+        <img src="/img-2.jpg" alt="overview of a large city with skyscrapers" />
       </section>
     </main>
   );
