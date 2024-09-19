@@ -1,6 +1,6 @@
 export { default as AppNav } from "./AppNav";
-export { default as City } from "./City";
-export { default as CountryItem } from "./CountryItem";
+export { default as CityList } from "./CityList";
+export { default as CountryList } from "./CountryList";
 export { default as Form } from "./Form";
 export { default as Logo } from "./Logo";
 export { default as Map } from "./Map";
